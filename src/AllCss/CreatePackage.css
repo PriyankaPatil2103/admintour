@@ -1,0 +1,37 @@
+/* Style for the container */
+.create-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  /* Style for form groups */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for form labels */
+  .form-label {
+    font-weight: bold;
+  }
+  
+  /* Style for form inputs */
+  .form-control {
+    width: 100%;
+  }
+  
+  /* Style for buttons */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Style for individual buttons */
+  .button-group button {
+    width: 48%;
+  }
+  
+  /* Style for alerts */
+  .alert {
+    margin-top: 20px;
+  }
+  
