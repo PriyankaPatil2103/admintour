@@ -27,7 +27,7 @@ function MyOffcanvas() {
                 <Offcanvas.Title>Offcanvas</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-                <Nav>
+                <Nav className="flex-column">
                     <Nav.Link onClick={handleClose}>
                         <Link to="/">Dashborad</Link>
                     </Nav.Link>
@@ -42,9 +42,6 @@ function MyOffcanvas() {
                     </Nav.Link>
                     <Nav.Link onClick={handleClose}>
                         <Link to="/Managebooking">Managebooking</Link>
-                    </Nav.Link>
-                    <Nav.Link>
-                        <Link to="/MyBooking">MyBooking</Link>
                     </Nav.Link>
                     <Nav.Link>
                         <Link to="/Manageissue">Manageissue</Link>

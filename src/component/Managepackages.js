@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
 // import { useParams } from 'react-router-dom'
 import "../AllCss/ManagePackage.css";
 
@@ -21,18 +21,25 @@ function Managepackages() {
   }, []);
   return (
     <div>
-      <Container>
+      <Container className="container">
         <Row>
           {packageData.map((pkg) => {
             return (
               <Col sm={12} md={6} lg={3}>
                 <Card>
-                  <Card.Img
+                  <Card.Img className="image"
                     src={`http://localhost:5000${pkg.PackageImage}`}
                     alt={pkg.PackageName}
                   ></Card.Img>
-                  <Card.Title>{pkg.PackageName}</Card.Title>
+                  <Card.Title className="card-title">{pkg.PackageName}</Card.Title>
+                  <Card.Body>
+                    <Card.Text>{pkg.PackageType}</Card.Text>
                   <Card.Text>{pkg.PackagePrice}</Card.Text>
+                  <Card.Text>{pkg.PackageLocation}</Card.Text>
+                  </Card.Body>
+                  <Button>View Details</Button>
+                  
+                  
                 </Card>
               </Col>
             );

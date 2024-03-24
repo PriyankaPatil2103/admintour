@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MyOffcanvas from "./MyOffcanvas";
 import BookingDetails from "./component/BookingDetails";
 import MyBooking from "./component/MyBooking";
+import Sidebar from "./Sidebar";
 
 function MyRoutes() {
   return (
